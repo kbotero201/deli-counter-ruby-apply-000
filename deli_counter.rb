@@ -1,13 +1,9 @@
 # Write your code here.
 
-
-
-
-
-katz_deli = []
+katz_deli = ["bob", "bill"]
 
 def line(katz_deli)
-  if katz_deli.count == 0 
+  if katz_deli.count == 0
     puts "The line is currently empty."
   else
     response = "The line is currently:"
@@ -17,13 +13,13 @@ def line(katz_deli)
     puts response
   end
 end
-  
+
   line(katz_deli)
 
 def take_a_number(katz_deli, name)
   puts "Welcome, #{name}. You are number #{katz_deli.count + 1} in line."
   katz_deli << name
-end 
+end
 
 take_a_number(katz_deli, "Kevin")
 
@@ -36,3 +32,13 @@ def now_serving(katz_deli)
 end
 
 now_serving(katz_deli)
+
+
+counter= 0
+
+def number_counter(counter)
+counter += 1
+puts counter
+end
+
+number_counter(3)
